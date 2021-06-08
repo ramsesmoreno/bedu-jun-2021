@@ -1,0 +1,18 @@
+h1 {
+    color: orange;
+}
+#principal {
+    color: blue;
+}
+h2 {
+    color: green;
+}
+h2 .resaltado {
+    color: red;
+}
+body strong {
+    color: magenta;
+}
+p + p {
+    background-color: yellow;
+}
