@@ -1,0 +1,98 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamiento</title>
+    <style>
+        .caja {
+            border: 1px solid purple;
+            background-color: rgba(255, 200, 200, 0.5);
+            width: 200px;
+            font-size: 1.5rem;
+        }
+        .static {
+            position: static;
+        }
+        .relativo {
+            position: relative;
+            height: 100px;
+            top: 20px;
+            left: 20px;
+        }
+        .relativo span {
+            position: relative;
+            top: 30px;
+        }
+        .absoluto {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        .absoluto span {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+        .fijo {
+            position: fixed;
+            right: 10px;
+            top: 60px;
+        }
+        .estatico {
+            width: 300px;
+        }
+        .estatico h2 {
+            position: sticky;
+            top: 0px;
+        }
+        .estatico h2.s1 {
+            top: 0px;
+        }
+        .estatico h2.s2 {
+            top: 30px;
+        }
+        .estatico h2.s3 {
+            top: 60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Posicionamiento</h1>
+    <div class="caja static">Caja 1</div>
+    <div class="caja relativo">Ca<span>j</span>a 2</div>
+    <div class="caja relativo">
+        Caja 3
+        <div class="caja absoluto">Caja 4</div>
+    </div>
+    <div class="caja absoluto">Caja 5</div>
+    <div class="caja fijo">Caja 6</div>
+    <div class="caja">Caja</div>
+    <div class="caja estatico">Caja
+        <h2 class="caja contenido">Mini menú 1</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nobis tempore provident quae dolores similique, veniam cumque laborum sed eaque blanditiis tempora nisi accusantium. Quod qui velit laborum excepturi eum!</p>
+    </div>
+    <div class="caja estatico">Caja
+        <h2 class="caja contenido s1"><a href="#t1">Mini menú 2</a></h2>
+        <p id="t1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nobis tempore provident quae dolores similique, veniam cumque laborum sed eaque blanditiis tempora nisi accusantium. Quod qui velit laborum excepturi eum!</p>
+        <h2 class="caja contenido s2"><a href="#t2">Mini menú 2.1</a></h2>
+        <p id="t2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nobis tempore provident quae dolores similique, veniam cumque laborum sed eaque blanditiis tempora nisi accusantium. Quod qui velit laborum excepturi eum!</p>
+        <h2 class="caja contenido s3" ><a href="#t3">Mini menú 2.2</a></h2>
+        <p id="t3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nobis tempore provident quae dolores similique, veniam cumque laborum sed eaque blanditiis tempora nisi accusantium. Quod qui velit laborum excepturi eum!</p>
+    </div>
+    <div class="caja estatico">Caja
+        <h2 class="caja contenido">Mini menú 3</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nobis tempore provident quae dolores similique, veniam cumque laborum sed eaque blanditiis tempora nisi accusantium. Quod qui velit laborum excepturi eum!</p>
+    </div>
+    <div class="caja estatico">Caja
+        <h2 class="caja contenido">Mini menú 4</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nobis tempore provident quae dolores similique, veniam cumque laborum sed eaque blanditiis tempora nisi accusantium. Quod qui velit laborum excepturi eum!</p>
+    </div>
+    <div class="caja estatico">Caja
+        <h2 class="caja contenido">Mini menú 5</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla nobis tempore provident quae dolores similique, veniam cumque laborum sed eaque blanditiis tempora nisi accusantium. Quod qui velit laborum excepturi eum!</p>
+    </div>
+    <div class="caja">Caja</div>
+    <div class="caja">Caja</div>
+</body>
+</html>
