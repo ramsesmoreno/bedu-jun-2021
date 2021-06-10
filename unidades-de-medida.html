@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .al-borde {
+            box-sizing: border-box;
+        }
+        .caja {
+            display: block;
+            border: 10px solid blue;
+            width: 200px;
+            height: 200px;
+            padding: 10px 10px;
+        }
+        .caja-porcentaje {
+            display: block;
+            border: 10px solid red;
+            width: 70%;
+            padding: 10px 10px;
+        }
+        .caja-viewport {
+            box-sizing: border-box;
+            display: block;
+            border: 2vw solid green;
+            width: 50vw; /* Viewport width 100 */
+            height: 50vw; /* Viewport height 100 */
+            padding: 15vw 25px; /* Padding vertical / Padding horizontal */
+            overflow: hidden;
+        }
+        .full-width {
+            box-sizing: border-box;
+            width: 100%;
+        }
+        html, body {
+            padding: 0;
+            margin: 0;
+        }
+        section {
+            font-size: 2em;
+        }
+        p {
+            font-size: 2em;
+        }
+        strong {
+            font-size: 2em;
+        }
+        em {
+            font-size: 2rem; /* Root EM */
+        }
+        html {
+            font-size: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Unidades de medida</h1>
+    <div class="caja">
+        Caja 1
+    </div>
+    <div class="caja al-borde">
+        Caja 2
+    </div>
+    <div class="caja-porcentaje">
+        Caja 3
+        <div class="caja-porcentaje">
+            Caja 4
+            <div class="caja-porcentaje">
+                Caja 5
+            </div>
+        </div>
+    </div>
+    <div class="caja-porcentaje full-width">
+        Caja 6
+    </div>
+    <div class="caja-viewport">
+        Caja 7
+        <div class="caja-viewport">
+            Caja 8
+        </div>
+    </div>
+    <section>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus, tempora voluptatum inventore <strong>dicta</strong> <em>laboriosam</em> delectus laudantium quidem magnam eligendi dolore incidunt autem vitae? Aliquid est, quam esse cupiditate voluptatibus odit!
+        </p>
+    </section>
+</body>
+</html>
