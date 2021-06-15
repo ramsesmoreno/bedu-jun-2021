@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex y composición</title>
+    <style>
+        .acomodo {
+            border: 3px solid orange;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .acomodo2 {
+            border: 3px solid orange;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .caja {
+            border: 1px solid purple;
+            background-color: rgba(255, 200, 200, 0.5);
+            width: 100px;
+        }
+        .caja.ancha {
+            width: 300px;
+        }
+        .caja.alta {
+    
+        }
+        .gandalla {
+            flex: 2;
+        }
+        .notanto {
+            flex: .5;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flex y composición</h1>
+    <section class="acomodo">
+        <div class="caja">Caja 1</div>
+        <div class="caja gandalla">Caja 2<br>Caja 2 </div>
+        <div class="caja notanto">Caja 3</div>
+        <div class="caja">Caja 4</div>
+    </section>
+    <section class="acomodo2">
+        <div class="caja">Caja 1</div>
+        <div class="caja ancha">Caja 2</div>
+        <div class="caja alta">Caja 3<br>Caja 3<br>Caja 3<br>Caja 3</div>
+        <div class="caja">Caja 4</div>
+    </section>
+    <section class="acomodo">
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2<br>Caja 2 </div>
+        <div class="caja">Caja 3</div>
+        <div class="caja">Caja 4</div>
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2<br>Caja 2 </div>
+        <div class="caja">Caja 3</div>
+        <div class="caja">Caja 4</div>
+        <div class="caja">Caja 1</div>
+        <div class="caja">Caja 2<br>Caja 2 <br>Caja 2 <br>Caja 2 <br>Caja 2 <br>Caja 2 <br>Caja 2 </div>
+        <div class="caja">Caja 3</div>
+        <div class="caja">Caja 4</div>
+    </section>
+</body>
+</html>
