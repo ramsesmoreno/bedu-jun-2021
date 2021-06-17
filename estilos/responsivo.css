@@ -1,0 +1,54 @@
+img.dentro-del-texto {
+    width: 60%;
+    height: auto;
+    float: right;
+    margin: 0 0 2em 2em;
+}
+h1 {
+    color: blue;
+}
+h2 {
+    clear: both;
+}
+h1, h2 {
+    font-family: 'Kirang Haerang', cursive;
+}
+.flotado {
+    background-color: yellow;
+    padding: 2rem;
+    margin: 0;
+    float: right;
+    width: 30%;
+}
+body {
+    background-color: cyan;
+    font-family: 'Lato', sans-serif;
+}
+@media all and (min-width: 400px) and (max-width: 499px)  {
+    body {
+        background-color: cyan;
+    }
+}
+@media all and (min-width: 550px) and (max-width: 650px)  {
+    body {
+       color: orange;
+    }
+}
+@media all and (min-width: 500px) and (max-width: 700px)  {
+    body {
+        background-color: purple;
+    }
+}
+@media all and (orientation: portrait) {
+    h2 {
+        color: green;
+    }
+}
+@media all and (hover: hover) {
+    
+}
+@media only print {
+    h1 {
+        color: green;
+    }
+}
