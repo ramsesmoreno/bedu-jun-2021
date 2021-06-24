@@ -1,0 +1,6 @@
+.noticias {
+    h1 {
+        color: green;
+        @include redondeado();
+    }
+}

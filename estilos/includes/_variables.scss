@@ -1,0 +1,13 @@
+$color-principal: #0000cc;
+$color-secundario: #ffcc00;
+$espaciado: 32px;
+$cuerpo: Arial, Helvetica, sans-serif;
+
+@mixin redondeado($tamano: 8px) {
+    background-color: yellow;
+    border-radius: $tamano;
+}
+%resaltar {
+    color: red;
+    font-weight: bold;
+}
