@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formas</title>
+    <style>
+        label {
+            display: block;
+            padding: 0.5rem;
+        }
+        label span, input {
+            display: inline-block;
+        }
+        label span {
+            width: 150px;
+            text-align: right;
+        }
+        form {
+            border: 2px dotted red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formas</h1>
+    <form action="https://enbm2ijsk69lrpd.m.pipedream.net" method="POST">
+
+        <label for="ciudad">Ciudad:</label>
+        <input type="text" name="ciudad" id="ciudad" placeholder="Escribe tu ciudad">
+
+        <label>
+            <span>Nombre:</span>
+            <input type="text" name="nombre" id="nombre">
+        </label>
+        <label>
+            <span>Correo:</span>
+            <input type="email" name="email" id="email">
+        </label>
+        <label>
+            <span>Edad:</span>
+            <input type="number" name="edad" id="edad">
+        </label>
+        <label>
+            <span>Fecha de nacimiento:</span>
+            <input type="date" name="fecha" id="fecha">
+        </label>
+        <label>
+            <span>Teléfono:</span>
+            <input type="tel" name="tel" id="tel">
+        </label>
+        <label>
+            <span>Contraseña:</span>
+            <input type="password" name="password" id="password">
+        </label>
+        <label>
+            <span>Nivel de satisfacción:</span>
+            <input type="range" name="satisfaccion" id="satisfaccion">
+        </label>
+        <label>
+            <span>Pais:</span>
+            <select name="pais" id="pais">
+                <option value="mx">México</option>
+                <option value="gt">Guatemala</option>
+                <option value="bz">Belice</option>
+            </select>
+        </label>
+        <label>
+            <span>¿Deseas recibir publidad?</span>
+            <input type="checkbox" name="publicidad" value="Si">
+        </label>
+        <p>Sexo</p>
+
+        <input type="radio" name="sexo" value="femenino" id="femenino">
+        <label for="femenino">Femenino</label>
+
+        <input type="radio" name="sexo" value="masculino" id="masculino">
+        <label for="masculino">Masculino</label>
+        
+        <input type="radio" name="sexo" value="prefiero no decir" id="otro">
+        <label for="otro">Prefiero no decir</label>
+
+        <textarea name="comentarios"></textarea>
+        <input type="hidden" name="oculto" value="valor oculto">
+        <button type="submit">Enviar</button>
+    </form>
+<hr>
+    <form action="https://enbm2ijsk69lrpd.m.pipedream.net" method="POST">
+        <label>
+            <span>Nombre:</span>
+            <input type="text" name="nombre" id="nombre">
+        </label>
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+</html>
