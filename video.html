@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video</title>
+    <style>
+        video {
+            width: 70vw;
+            height: 50vw;
+            border: 1px solid red;
+            background-color: lightslategray;
+        }
+        main {
+            display: flex;
+            height: 90vh;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video</h1>
+    <main>
+        <video width="640" height="640" controls>
+            <source src="assets/tutorial.mp4" type="video/mp4">
+        </video>
+    </main>
+    <aside>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Bifsgn1G0XM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </aside>
+</body>
+</html>
